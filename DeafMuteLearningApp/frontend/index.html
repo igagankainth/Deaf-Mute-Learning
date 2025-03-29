@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deaf & Mute Learning App</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">LearnAble</div>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#voice">Voice to Text</a></li>
+            <li><a href="#translator">Translator</a></li>
+            <li><a href="#learning">Learning</a></li>
+            <li><button id="toggle-mode">Dark Mode</button></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Empowering Deaf & Mute Students</h1>
+        <p>Bridging the communication gap with technology.</p>
+    </section>
+
+    <!-- Voice to Text Section -->
+    <section id="voice" class="section">
+        <h2>Voice to Text Converter</h2>
+        <p>Convert real-time speech into text.</p>
+        <button id="start-recording" class="btn">Start Recording</button>
+        <button id="stop-recording" class="btn">Stop Recording</button>
+        <div class="output" id="voice-output">Converted text will appear here...</div>
+    </section>
+
+    <!-- Translator Section -->
+    <section id="translator" class="section">
+        <h2>Text Translator to other language</h2>
+        <div class="translator-box">
+            <select id="language-select" class="translator-dropdown">
+                <option value="pa">Punjabi</option>
+                <option value="hi">Hindi</option>
+            </select>
+            <textarea id="text-input" placeholder="Enter text..."></textarea>
+            <button class="btn" onclick="translateText()">Translate</button>
+        </div>
+        <div class="output" id="output">Translation will appear here...</div>
+    </section>
+
+    <!-- Learning Section -->
+    <section id="learning" class="section">
+        <h2>Learning Portal</h2>
+        <div class="cards">
+            <div class="card">
+                <h3>Mathematics</h3>
+                <p>Learn basic mathematics interactively.</p>
+                <button class="btn">Explore</button>
+            </div>
+            <div class="card">
+                <h3>Science</h3>
+                <p>Learn basic science interactively.</p>
+                <button class="btn">Explore</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 Deaf & Mute Learning App | Designed for Accessibility</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
